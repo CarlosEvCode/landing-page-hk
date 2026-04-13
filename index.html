@@ -1,230 +1,118 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
     <title>Nimbus | Productividad para equipos</title>
   </head>
-  <body x-data="{ shown: false }" x-init="setTimeout(() => shown = true, 100)">
-    <!-- Navbar -->
+  <body>
     <nav>
       <div class="container nav-wrapper">
-        <a href="#" class="logo">
-          <span class="material-symbols-outlined">cloud</span>
-          nimbus
-        </a>
-        <div class="nav-links">
-          <a href="#features" class="nav-link">Funcionalidades</a>
-          <a href="#how-it-works" class="nav-link">Cómo funciona</a>
-          <a href="#demo" class="nav-link">Demo</a>
-          <a href="#contact" class="btn btn-primary">Empezar gratis</a>
-        </div>
+        <a href="#" class="logo"><span class="material-symbols-outlined">cloud</span>nimbus</a>
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link">Funcionalidades</a></li>
+          <li><a href="#how-it-works" class="nav-link">Cómo funciona</a></li>
+          <li><a href="#contact" class="btn btn-primary">Empezar gratis</a></li>
+        </ul>
       </div>
     </nav>
 
     <main>
-      <!-- Hero -->
       <section id="hero" class="text-center">
-        <div class="container hero-content" x-show="shown" x-transition.duration.1000ms>
+        <div class="container hero-content">
           <h1 class="hero-title">Trabaja a la velocidad del pensamiento.</h1>
-          <p class="hero-subtitle">
-            Nimbus es el espacio de trabajo minimalista donde los equipos gestionan tareas, documentos y objetivos en un flujo unificado.
-          </p>
+          <p class="hero-subtitle">Nimbus es el espacio de trabajo minimalista donde los equipos gestionan tareas, documentos y objetivos en un flujo unificado.</p>
           <a href="#contact" class="btn btn-primary btn-large">Prueba Nimbus gratis</a>
         </div>
       </section>
 
-      <!-- Trusted By -->
-      <section id="trusted" class="bg-secondary text-center" style="padding: 4rem 0;">
+      <!-- Trusted Section -->
+      <section class="bg-alt text-center" style="padding: 4rem 0;">
         <div class="container">
-            <p class="uppercase-tracking text-muted" style="margin-bottom: 2rem;">Confían en nosotros equipos de</p>
-            <div class="trusted-grid">
-              <span class="brand-logo">VELOCITY</span>
-              <span class="brand-logo">NEXUS</span>
-              <span class="brand-logo">ACME CORP</span>
-              <span class="brand-logo">GLOBEX</span>
-              <span class="brand-logo">CYBERDYNE</span>
-            </div>
+          <p class="text-muted" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.75rem; margin-bottom: 2.5rem; font-weight: 600;">Confían en nosotros equipos de</p>
+          <div style="display: flex; justify-content: center; gap: 5rem; opacity: 0.4; filter: grayscale(1); font-weight: 800; font-size: 1.1rem;">
+            <span>VELOCITY</span><span>NEXUS</span><span>GLOBEX</span><span>CYBERDYNE</span>
+          </div>
         </div>
       </section>
 
-      <!-- Funcionalidades -->
       <section id="features">
         <div class="container">
           <h2 class="section-title">Construido para el rendimiento.</h2>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon"><span class="material-symbols-outlined" style="font-size: 2.5rem;">bolt</span></div>
-              <h3 class="feature-title">Velocidad Extrema</h3>
-              <p class="feature-desc">Interfaz optimizada para una navegación instantánea sin tiempos de carga.</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><span class="material-symbols-outlined" style="font-size: 2.5rem;">group</span></div>
-              <h3 class="feature-title">Colaboración Real</h3>
-              <p class="feature-desc">Trabaja en tiempo real con tu equipo. Edición compartida y notificaciones.</p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon"><span class="material-symbols-outlined" style="font-size: 2.5rem;">security</span></div>
-              <h3 class="feature-title">Seguridad Total</h3>
-              <p class="feature-desc">Tus datos están protegidos con cifrado de grado militar y backups constantes.</p>
-            </div>
+          <div class="grid-3">
+            <article class="card"><span class="material-symbols-outlined icon-lg">bolt</span><h3>Velocidad Extrema</h3><p class="text-muted">Interfaz optimizada para una navegación instantánea sin esperas.</p></article>
+            <article class="card"><span class="material-symbols-outlined icon-lg">group</span><h3>Colaboración Real</h3><p class="text-muted">Trabaja en tiempo real con edición compartida y notificaciones.</p></article>
+            <article class="card"><span class="material-symbols-outlined icon-lg">security</span><h3>Seguridad Total</h3><p class="text-muted">Cifrado de grado militar y backups constantes para tus datos.</p></article>
           </div>
         </div>
       </section>
 
-      <!-- Cómo funciona -->
-      <section id="how-it-works" class="bg-secondary">
+      <section id="how-it-works" class="bg-alt">
         <div class="container">
           <h2 class="section-title">Simple pero potente.</h2>
-          <div class="steps-grid text-center">
-            <div class="step-item">
-              <span class="step-number">01</span>
-              <h3 class="step-title">Conecta tu equipo</h3>
-              <p class="step-desc">Importa tus proyectos actuales en segundos y añade a tus colaboradores.</p>
-            </div>
-            <div class="step-item">
-              <span class="step-number">02</span>
-              <h3 class="step-title">Organiza el flujo</h3>
-              <p class="step-desc">Crea tableros, documentos y objetivos con nuestra interfaz intuitiva.</p>
-            </div>
-            <div class="step-item">
-              <span class="step-number">03</span>
-              <h3 class="step-title">Alcanza tus metas</h3>
-              <p class="step-desc">Mide el progreso y mantén a todos alineados con la velocidad del pensamiento.</p>
-            </div>
+          <div class="grid-3">
+            <div class="step"><span class="step-num">01</span><h3>Conecta</h3><p class="text-muted">Importa tus proyectos actuales en segundos.</p></div>
+            <div class="step"><span class="step-num">02</span><h3>Organiza</h3><p class="text-muted">Crea tableros con nuestra interfaz intuitiva.</p></div>
+            <div class="step"><span class="step-num">03</span><h3>Alcanza</h3><p class="text-muted">Mide el progreso y mantén a todos alineados.</p></div>
           </div>
         </div>
       </section>
 
-      <!-- Multimedia (Demo) -->
-      <section id="demo">
-        <div class="container text-center">
+      <section id="demo" class="text-center">
+        <div class="container">
           <h2 class="section-title">Mira a Nimbus en acción.</h2>
-          <div class="video-container">
-            <iframe 
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=kUn2pfmLm1xGCvPZ" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen>
-            </iframe>
-          </div>
+          <div class="video-box"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=kUn2pfmLm1xGCvPZ" allowfullscreen></iframe></div>
         </div>
       </section>
 
-      <!-- FAQ -->
       <section id="faq">
         <div class="container">
           <h2 class="section-title">Preguntas frecuentes.</h2>
-          <div class="faq-list" x-data="{ active: null }">
-            <div class="faq-item">
-              <button class="faq-button" @click="active !== 1 ? active = 1 : active = null">
-                ¿Es Nimbus gratuito para equipos pequeños?
-                <span class="material-symbols-outlined faq-icon" :class="active === 1 ? 'rotate' : ''">expand_more</span>
-              </button>
-              <div class="faq-answer" x-show="active === 1" x-transition.opacity.duration.300ms>
-                Sí, Nimbus ofrece un plan gratuito para equipos de hasta 5 personas con todas las funcionalidades básicas de gestión de tareas.
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-button" @click="active !== 2 ? active = 2 : active = null">
-                ¿Qué tan segura es mi información?
-                <span class="material-symbols-outlined faq-icon" :class="active === 2 ? 'rotate' : ''">expand_more</span>
-              </button>
-              <div class="faq-answer" x-show="active === 2" x-transition.opacity.duration.300ms>
-                Utilizamos cifrado AES-256 de extremo a extremo. Además, realizamos copias de seguridad automáticas cada hora.
-              </div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-button" @click="active !== 3 ? active = 3 : active = null">
-                ¿Puedo importar datos de otras herramientas?
-                <span class="material-symbols-outlined faq-icon" :class="active === 3 ? 'rotate' : ''">expand_more</span>
-              </button>
-              <div class="faq-answer" x-show="active === 3" x-transition.opacity.duration.300ms>
-                ¡Por supuesto! Nimbus tiene integraciones directas con Notion, Trello, Asana y Jira para que el cambio sea instantáneo.
-              </div>
-            </div>
+          <div class="faq-container">
+            <details>
+              <summary>¿Es Nimbus gratuito? <span class="material-symbols-outlined">expand_more</span></summary>
+              <p>Sí, ofrecemos un plan gratuito para equipos de hasta 5 personas.</p>
+            </details>
+            <details>
+              <summary>¿Es segura mi información? <span class="material-symbols-outlined">expand_more</span></summary>
+              <p>Usamos cifrado AES-256 de extremo a extremo en todos tus datos.</p>
+            </details>
+            <details>
+              <summary>¿Puedo importar datos? <span class="material-symbols-outlined">expand_more</span></summary>
+              <p>Sí, tenemos integraciones con Notion, Trello y Jira.</p>
+            </details>
           </div>
         </div>
       </section>
 
-      <!-- Sección 7: Contacto con Validación Alpine.js -->
-      <section id="contact" class="bg-secondary">
+      <section id="contact" class="bg-alt">
         <div class="container text-center">
           <h2 class="section-title">¿Listo para mejorar?</h2>
-          <div class="contact-form" x-data="{ 
-              name: '', 
-              email: '', 
-              message: '', 
-              submitted: false, 
-              loading: false,
-              validate() {
-                if(this.name && this.email && this.message) {
-                  this.loading = true;
-                  setTimeout(() => {
-                    this.loading = false;
-                    this.submitted = true;
-                    this.name = ''; this.email = ''; this.message = '';
-                  }, 1500);
-                } else {
-                  alert('Por favor, rellena todos los campos.');
-                }
-              }
-            }">
-            
-            <form @submit.prevent="validate()" x-show="!submitted" x-transition>
-              <div class="form-group">
-                <label for="name">Nombre completo</label>
-                <input type="text" id="name" x-model="name" class="form-input" placeholder="Tu nombre">
-              </div>
-              <div class="form-group">
-                <label for="email">Email corporativo</label>
-                <input type="email" id="email" x-model="email" class="form-input" placeholder="nombre@empresa.com">
-              </div>
-              <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" x-model="message" class="form-input form-textarea" placeholder="¿En qué podemos ayudarte?"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-full" :disabled="loading">
-                <span x-show="!loading">Enviar mensaje</span>
-                <span x-show="loading">Enviando...</span>
-              </button>
+          <div class="form-wrapper">
+            <form id="contactForm">
+              <div class="field"><label for="name">Nombre</label><input type="text" id="name" required placeholder="Tu nombre"></div>
+              <div class="field"><label for="email">Email</label><input type="email" id="email" required placeholder="nombre@empresa.com"></div>
+              <div class="field"><label for="message">Mensaje</label><textarea id="message" required placeholder="¿En qué podemos ayudarte?"></textarea></div>
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Enviar mensaje</button>
             </form>
-
-            <div class="success-msg" x-show="submitted" x-transition>
-              <span class="material-symbols-outlined">check_circle</span>
-              ¡Gracias! Tu mensaje ha sido enviado correctamente.
-            </div>
+            <div id="successMsg" class="msg-success hidden">¡Mensaje enviado con éxito!</div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="text-center">
-      <div class="container footer-content">
-        <a href="#" class="logo">
-          <span class="material-symbols-outlined">cloud</span>
-          nimbus
-        </a>
-        <div class="social-links">
-          <a href="#" class="social-icon"><span class="material-symbols-outlined">terminal</span> GitHub</a>
-          <a href="#" class="social-icon"><span class="material-symbols-outlined">share</span> Twitter</a>
-          <a href="#" class="social-icon"><span class="material-symbols-outlined">group</span> LinkedIn</a>
+      <div class="container">
+        <a href="#" class="logo" style="justify-content:center"><span class="material-symbols-outlined">cloud</span>nimbus</a>
+        <div class="socials">
+          <a href="#" class="social-link"><span class="material-symbols-outlined">terminal</span>GitHub</a>
+          <a href="#" class="social-link"><span class="material-symbols-outlined">share</span>Twitter</a>
+          <a href="#" class="social-link"><span class="material-symbols-outlined">group</span>LinkedIn</a>
         </div>
-        <p class="footer-copy">
-          &copy; 2026 Nimbus Labs. Todos los derechos reservados.
-        </p>
+        <p class="text-muted" style="font-size: 0.85rem;">&copy; 2026 Nimbus Labs. Todos los derechos reservados.</p>
       </div>
     </footer>
     <script src="js/main.js"></script>
