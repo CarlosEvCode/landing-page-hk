@@ -32,7 +32,7 @@
     </nav>
 
     <main>
-      <!-- Sección 1: Hero -->
+      <!-- Hero -->
       <section id="hero" class="text-center">
         <div class="container hero-content" x-show="shown" x-transition.duration.1000ms>
           <h1 class="hero-title">Trabaja a la velocidad del pensamiento.</h1>
@@ -43,10 +43,10 @@
         </div>
       </section>
 
-      <!-- Sección 2: Trusted By -->
+      <!-- Trusted By -->
       <section id="trusted" class="bg-secondary text-center" style="padding: 4rem 0;">
         <div class="container">
-            <p class="uppercase-tracking text-muted trusted-label">Confían en nosotros equipos de</p>
+            <p class="uppercase-tracking text-muted" style="margin-bottom: 2rem;">Confían en nosotros equipos de</p>
             <div class="trusted-grid">
               <span class="brand-logo">VELOCITY</span>
               <span class="brand-logo">NEXUS</span>
@@ -57,67 +57,79 @@
         </div>
       </section>
 
-      <!-- Sección 3: Funcionalidades -->
+      <!-- Funcionalidades -->
       <section id="features">
         <div class="container">
           <h2 class="section-title">Construido para el rendimiento.</h2>
           <div class="features-grid">
-            <!-- Feature 1 -->
             <div class="feature-card">
-              <div class="feature-icon">
-                <span class="material-symbols-outlined">bolt</span>
-              </div>
+              <div class="feature-icon"><span class="material-symbols-outlined" style="font-size: 2.5rem;">bolt</span></div>
               <h3 class="feature-title">Velocidad Extrema</h3>
-              <p class="feature-desc">
-                Interfaz optimizada para una navegación instantánea. Sin tiempos de carga, solo flujo puro de trabajo.
-              </p>
+              <p class="feature-desc">Interfaz optimizada para una navegación instantánea sin tiempos de carga.</p>
             </div>
-            <!-- Feature 2 -->
             <div class="feature-card">
-              <div class="feature-icon">
-                <span class="material-symbols-outlined">group</span>
-              </div>
+              <div class="feature-icon"><span class="material-symbols-outlined" style="font-size: 2.5rem;">group</span></div>
               <h3 class="feature-title">Colaboración Real</h3>
-              <p class="feature-desc">
-                Trabaja en tiempo real con tu equipo. Edición compartida, comentarios y notificaciones inteligentes.
-              </p>
+              <p class="feature-desc">Trabaja en tiempo real con tu equipo. Edición compartida y notificaciones.</p>
             </div>
-            <!-- Feature 3 -->
             <div class="feature-card">
-              <div class="feature-icon">
-                <span class="material-symbols-outlined">security</span>
-              </div>
+              <div class="feature-icon"><span class="material-symbols-outlined" style="font-size: 2.5rem;">security</span></div>
               <h3 class="feature-title">Seguridad Total</h3>
-              <p class="feature-desc">
-                Tus datos están protegidos con cifrado de grado militar y copias de seguridad automáticas cada hora.
-              </p>
+              <p class="feature-desc">Tus datos están protegidos con cifrado de grado militar y backups constantes.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Sección 4: Cómo funciona -->
+      <!-- Cómo funciona -->
       <section id="how-it-works" class="bg-secondary">
         <div class="container">
           <h2 class="section-title">Simple pero potente.</h2>
+          <div class="steps-grid text-center">
+            <div class="step-item">
+              <span class="step-number">01</span>
+              <h3 class="step-title">Conecta tu equipo</h3>
+              <p class="step-desc">Importa tus proyectos actuales en segundos y añade a tus colaboradores.</p>
+            </div>
+            <div class="step-item">
+              <span class="step-number">02</span>
+              <h3 class="step-title">Organiza el flujo</h3>
+              <p class="step-desc">Crea tableros, documentos y objetivos con nuestra interfaz intuitiva.</p>
+            </div>
+            <div class="step-item">
+              <span class="step-number">03</span>
+              <h3 class="step-title">Alcanza tus metas</h3>
+              <p class="step-desc">Mide el progreso y mantén a todos alineados con la velocidad del pensamiento.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Sección 5: Multimedia (Demo) -->
+      <!-- Multimedia (Demo) -->
       <section id="demo">
         <div class="container text-center">
           <h2 class="section-title">Mira a Nimbus en acción.</h2>
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=kUn2pfmLm1xGCvPZ" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
       </section>
 
-      <!-- Sección 6: FAQ -->
+      <!-- FAQ -->
       <section id="faq">
         <div class="container">
           <h2 class="section-title">Preguntas frecuentes.</h2>
         </div>
       </section>
 
-      <!-- Sección 7: Contacto -->
+      <!-- Contacto -->
       <section id="contact">
         <div class="container">
           <h2 class="section-title">¿Listo para mejorar?</h2>
