@@ -122,10 +122,46 @@
         </div>
       </section>
 
-      <!-- FAQ -->
+      <!-- FAQ (Acordeón con Alpine.js) -->
       <section id="faq">
         <div class="container">
           <h2 class="section-title">Preguntas frecuentes.</h2>
+          <div class="faq-list" x-data="{ active: null }">
+            
+            <!-- Pregunta 1 -->
+            <div class="faq-item">
+              <button class="faq-button" @click="active !== 1 ? active = 1 : active = null">
+                ¿Es Nimbus gratuito para equipos pequeños?
+                <span class="material-symbols-outlined faq-icon" :class="active === 1 ? 'rotate' : ''">expand_more</span>
+              </button>
+              <div class="faq-answer" x-show="active === 1" x-transition.opacity.duration.300ms>
+                Sí, Nimbus ofrece un plan gratuito para equipos de hasta 5 personas con todas las funcionalidades básicas de gestión de tareas.
+              </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="faq-item">
+              <button class="faq-button" @click="active !== 2 ? active = 2 : active = null">
+                ¿Qué tan segura es mi información?
+                <span class="material-symbols-outlined faq-icon" :class="active === 2 ? 'rotate' : ''">expand_more</span>
+              </button>
+              <div class="faq-answer" x-show="active === 2" x-transition.opacity.duration.300ms>
+                Utilizamos cifrado AES-256 de extremo a extremo. Además, realizamos copias de seguridad automáticas en servidores redundantes cada hora.
+              </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="faq-item">
+              <button class="faq-button" @click="active !== 3 ? active = 3 : active = null">
+                ¿Puedo importar datos de otras herramientas?
+                <span class="material-symbols-outlined faq-icon" :class="active === 3 ? 'rotate' : ''">expand_more</span>
+              </button>
+              <div class="faq-answer" x-show="active === 3" x-transition.opacity.duration.300ms>
+                ¡Por supuesto! Nimbus tiene integraciones directas con Notion, Trello, Asana y Jira para que el cambio sea instantáneo.
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
