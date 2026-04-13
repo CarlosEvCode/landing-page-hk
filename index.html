@@ -9,31 +9,33 @@
     <title>Nimbus | Productividad para equipos</title>
   </head>
   <body>
-    <nav>
-      <div class="container nav-wrapper">
-        <a href="#" class="logo"><span class="material-symbols-outlined">cloud</span>nimbus</a>
+    <header>
+      <nav class="container nav-wrapper">
+        <a href="#" class="logo" aria-label="Inicio Nimbus">
+          <span class="material-symbols-outlined" aria-hidden="true">cloud</span>
+          nimbus
+        </a>
         <ul class="nav-links">
           <li><a href="#features" class="nav-link">Funcionalidades</a></li>
           <li><a href="#how-it-works" class="nav-link">Cómo funciona</a></li>
           <li><a href="#contact" class="btn btn-primary">Empezar gratis</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <main>
       <section id="hero" class="text-center">
         <div class="container hero-content">
           <h1 class="hero-title">Trabaja a la velocidad del pensamiento.</h1>
-          <p class="hero-subtitle">Nimbus es el espacio de trabajo minimalista donde los equipos gestionan tareas, documentos y objetivos en un flujo unificado.</p>
+          <p class="hero-subtitle text-muted">Nimbus es el espacio de trabajo minimalista donde los equipos gestionan tareas, documentos y objetivos en un flujo unificado.</p>
           <a href="#contact" class="btn btn-primary btn-large">Prueba Nimbus gratis</a>
         </div>
       </section>
 
-      <!-- Trusted Section -->
-      <section class="bg-alt text-center" style="padding: 4rem 0;">
+      <section class="bg-alt text-center logos-section" aria-label="Empresas que confían">
         <div class="container">
-          <p class="text-muted" style="text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.75rem; margin-bottom: 2.5rem; font-weight: 600;">Confían en nosotros equipos de</p>
-          <div style="display: flex; justify-content: center; gap: 5rem; opacity: 0.4; filter: grayscale(1); font-weight: 800; font-size: 1.1rem;">
+          <h2 class="uppercase-label text-muted">Confían en nosotros equipos de</h2>
+          <div class="brands-grid">
             <span>VELOCITY</span><span>NEXUS</span><span>GLOBEX</span><span>CYBERDYNE</span>
           </div>
         </div>
@@ -43,20 +45,32 @@
         <div class="container">
           <h2 class="section-title">Construido para el rendimiento.</h2>
           <div class="grid-3">
-            <article class="card"><span class="material-symbols-outlined icon-lg">bolt</span><h3>Velocidad Extrema</h3><p class="text-muted">Interfaz optimizada para una navegación instantánea sin esperas.</p></article>
-            <article class="card"><span class="material-symbols-outlined icon-lg">group</span><h3>Colaboración Real</h3><p class="text-muted">Trabaja en tiempo real con edición compartida y notificaciones.</p></article>
-            <article class="card"><span class="material-symbols-outlined icon-lg">security</span><h3>Seguridad Total</h3><p class="text-muted">Cifrado de grado militar y backups constantes para tus datos.</p></article>
+            <article class="card">
+              <span class="material-symbols-outlined icon-lg" aria-hidden="true">bolt</span>
+              <h3>Velocidad Extrema</h3>
+              <p class="text-muted">Interfaz optimizada para una navegación instantánea sin esperas.</p>
+            </article>
+            <article class="card">
+              <span class="material-symbols-outlined icon-lg" aria-hidden="true">group</span>
+              <h3>Colaboración Real</h3>
+              <p class="text-muted">Trabaja en tiempo real con edición compartida y notificaciones.</p>
+            </article>
+            <article class="card">
+              <span class="material-symbols-outlined icon-lg" aria-hidden="true">security</span>
+              <h3>Seguridad Total</h3>
+              <p class="text-muted">Cifrado de grado militar y backups constantes para tus datos.</p>
+            </article>
           </div>
         </div>
       </section>
 
       <section id="how-it-works" class="bg-alt">
-        <div class="container">
+        <div class="container text-center">
           <h2 class="section-title">Simple pero potente.</h2>
           <div class="grid-3">
-            <div class="step"><span class="step-num">01</span><h3>Conecta</h3><p class="text-muted">Importa tus proyectos actuales en segundos.</p></div>
-            <div class="step"><span class="step-num">02</span><h3>Organiza</h3><p class="text-muted">Crea tableros con nuestra interfaz intuitiva.</p></div>
-            <div class="step"><span class="step-num">03</span><h3>Alcanza</h3><p class="text-muted">Mide el progreso y mantén a todos alineados.</p></div>
+            <div class="step"><span class="step-num" aria-hidden="true">01</span><h3>Conecta</h3><p class="text-muted">Importa tus proyectos actuales en segundos.</p></div>
+            <div class="step"><span class="step-num" aria-hidden="true">02</span><h3>Organiza</h3><p class="text-muted">Crea tableros con nuestra interfaz intuitiva.</p></div>
+            <div class="step"><span class="step-num" aria-hidden="true">03</span><h3>Alcanza</h3><p class="text-muted">Mide el progreso y mantén a todos alineados.</p></div>
           </div>
         </div>
       </section>
@@ -64,24 +78,26 @@
       <section id="demo" class="text-center">
         <div class="container">
           <h2 class="section-title">Mira a Nimbus en acción.</h2>
-          <div class="video-box"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=kUn2pfmLm1xGCvPZ" allowfullscreen></iframe></div>
+          <div class="video-box" aria-label="Demostración en video de Nimbus">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=kUn2pfmLm1xGCvPZ" allowfullscreen title="Video demostración de Nimbus"></iframe>
+          </div>
         </div>
       </section>
 
       <section id="faq">
         <div class="container">
-          <h2 class="section-title">Preguntas frecuentes.</h2>
+          <h2 class="section-title text-center">Preguntas frecuentes.</h2>
           <div class="faq-container">
             <details>
-              <summary>¿Es Nimbus gratuito? <span class="material-symbols-outlined">expand_more</span></summary>
+              <summary>¿Es Nimbus gratuito? <span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary>
               <p>Sí, ofrecemos un plan gratuito para equipos de hasta 5 personas.</p>
             </details>
             <details>
-              <summary>¿Es segura mi información? <span class="material-symbols-outlined">expand_more</span></summary>
+              <summary>¿Es segura mi información? <span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary>
               <p>Usamos cifrado AES-256 de extremo a extremo en todos tus datos.</p>
             </details>
             <details>
-              <summary>¿Puedo importar datos? <span class="material-symbols-outlined">expand_more</span></summary>
+              <summary>¿Puedo importar datos? <span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary>
               <p>Sí, tenemos integraciones con Notion, Trello y Jira.</p>
             </details>
           </div>
@@ -93,12 +109,24 @@
           <h2 class="section-title">¿Listo para mejorar?</h2>
           <div class="form-wrapper">
             <form id="contactForm">
-              <div class="field"><label for="name">Nombre</label><input type="text" id="name" required placeholder="Tu nombre"></div>
-              <div class="field"><label for="email">Email</label><input type="email" id="email" required placeholder="nombre@empresa.com"></div>
-              <div class="field"><label for="message">Mensaje</label><textarea id="message" required placeholder="¿En qué podemos ayudarte?"></textarea></div>
+              <div class="field">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="nombre@empresa.com">
+              </div>
+              <div class="field">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required placeholder="¿En qué podemos ayudarte?"></textarea>
+              </div>
               <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Enviar mensaje</button>
             </form>
-            <div id="successMsg" class="msg-success hidden">¡Mensaje enviado con éxito!</div>
+            <div id="successMsg" class="msg-success hidden" role="alert">
+              <span class="material-symbols-outlined" aria-hidden="true">done</span>
+              <span>Mensaje enviado</span>
+            </div>
           </div>
         </div>
       </section>
@@ -106,13 +134,18 @@
 
     <footer class="text-center">
       <div class="container">
-        <a href="#" class="logo" style="justify-content:center"><span class="material-symbols-outlined">cloud</span>nimbus</a>
-        <div class="socials">
-          <a href="#" class="social-link"><span class="material-symbols-outlined">terminal</span>GitHub</a>
-          <a href="#" class="social-link"><span class="material-symbols-outlined">share</span>Twitter</a>
-          <a href="#" class="social-link"><span class="material-symbols-outlined">group</span>LinkedIn</a>
-        </div>
-        <p class="text-muted" style="font-size: 0.85rem;">&copy; 2026 Nimbus Labs. Todos los derechos reservados.</p>
+        <a href="#" class="logo-centered" aria-label="Nimbus Home">
+          <span class="material-symbols-outlined" aria-hidden="true">cloud</span>
+          nimbus
+        </a>
+        <nav aria-label="Redes sociales">
+          <div class="socials">
+            <a href="#" class="social-link" aria-label="GitHub"><span class="material-symbols-outlined" aria-hidden="true">terminal</span>GitHub</a>
+            <a href="#" class="social-link" aria-label="Twitter"><span class="material-symbols-outlined" aria-hidden="true">share</span>Twitter</a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><span class="material-symbols-outlined" aria-hidden="true">group</span>LinkedIn</a>
+          </div>
+        </nav>
+        <p class="text-muted footer-copy">&copy; 2026 Nimbus Labs. Todos los derechos reservados.</p>
       </div>
     </footer>
     <script src="js/main.js"></script>
