@@ -1,13 +1,102 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <title>Linux Terminal Experience</title>
+    <title>Nimbus | Productividad para equipos</title>
   </head>
-  <body></body>
+  <body x-data="{ menuOpen: false }">
+    <!-- Navbar -->
+    <nav>
+      <div class="container nav-wrapper">
+        <a href="#" class="logo">nimbus</a>
+        <div class="nav-links">
+          <a href="#features" class="btn btn-text">Funcionalidades</a>
+          <a href="#contact" class="btn btn-primary">Empezar</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Sección 1: Hero -->
+      <section id="hero" class="text-center">
+        <div class="container hero-content">
+          <h1 class="hero-title">Trabaja a la velocidad del pensamiento.</h1>
+          <p class="hero-subtitle text-muted">
+            Nimbus es el espacio de trabajo minimalista donde los equipos gestionan tareas, documentos y objetivos en un flujo unificado.
+          </p>
+          <a href="#contact" class="btn btn-primary btn-large">Prueba Nimbus gratis</a>
+        </div>
+      </section>
+
+      <!-- Sección 2: Trusted By (Empresas) -->
+      <section id="trusted" class="trusted-section bg-secondary text-center">
+        <div class="container">
+            <p class="uppercase-tracking text-muted trusted-label">Confían en nosotros equipos de</p>
+            <!-- Logos irán aquí -->
+        </div>
+      </section>
+
+      <!-- Sección 3: Funcionalidades -->
+      <section id="features">
+        <div class="container">
+          <h2 class="section-title">Construido para el rendimiento.</h2>
+        </div>
+      </section>
+
+      <!-- Sección 4: Cómo funciona -->
+      <section id="how-it-works" class="bg-secondary">
+        <div class="container">
+          <h2 class="section-title">Simple pero potente.</h2>
+        </div>
+      </section>
+
+      <!-- Sección 5: Multimedia (Demo) -->
+      <section id="demo">
+        <div class="container text-center">
+          <h2 class="section-title">Mira a Nimbus en acción.</h2>
+          <!-- El video de YouTube se agregará aquí -->
+        </div>
+      </section>
+
+      <!-- Sección 6: FAQ (Preguntas Frecuentes) -->
+      <section id="faq">
+        <div class="container">
+          <h2 class="section-title">Preguntas frecuentes.</h2>
+        </div>
+      </section>
+
+      <!-- Sección 7: Contacto -->
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title">¿Listo para mejorar?</h2>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container">
+        <a href="#" class="logo footer-logo">nimbus</a>
+        <div class="social-links">
+          <a href="#">Twitter</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
+        <p class="footer-copy text-muted">
+          &copy; 2026 Nimbus Labs. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
