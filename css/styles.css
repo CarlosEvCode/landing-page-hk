@@ -104,17 +104,57 @@ section {
   letter-spacing: -0.025em;
 }
 
+/* Hero */
+.hero-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+/* Trusted By / Logos */
+.trusted-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  opacity: 0.6;
+  filter: grayscale(1);
+}
+
+.brand-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
 /* Botones */
 .btn {
   display: inline-block;
-  padding: 0.625rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease;
   cursor: pointer;
   border: none;
-  font-size: 0.9375rem;
 }
 
 .btn-primary {
@@ -124,8 +164,13 @@ section {
 
 .btn-primary:hover {
   background-color: #0052cc;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 102, 255, 0.25);
+}
+
+.btn-large {
+  padding: 1.1rem 2.2rem;
+  font-size: 1.125rem;
 }
 
 /* Footer */
@@ -155,19 +200,9 @@ footer {
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  font-weight: 500;
 }
 
 .social-icon:hover {
   color: var(--primary-color);
   transform: translateY(-2px);
-}
-
-.social-icon .material-symbols-outlined {
-  font-size: 1.5rem;
-}
-
-.footer-copy {
-  font-size: 0.875rem;
-  color: var(--text-muted);
 }

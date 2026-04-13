@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Google Material Symbols -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script
       defer
@@ -16,7 +14,7 @@
     ></script>
     <title>Nimbus | Productividad para equipos</title>
   </head>
-  <body x-data="{ menuOpen: false }">
+  <body x-data="{ shown: false }" x-init="setTimeout(() => shown = true, 100)">
     <!-- Navbar -->
     <nav>
       <div class="container nav-wrapper">
@@ -36,20 +34,26 @@
     <main>
       <!-- Sección 1: Hero -->
       <section id="hero" class="text-center">
-        <div class="container hero-content">
+        <div class="container hero-content" x-show="shown" x-transition.duration.1000ms>
           <h1 class="hero-title">Trabaja a la velocidad del pensamiento.</h1>
-          <p class="hero-subtitle text-muted">
+          <p class="hero-subtitle">
             Nimbus es el espacio de trabajo minimalista donde los equipos gestionan tareas, documentos y objetivos en un flujo unificado.
           </p>
           <a href="#contact" class="btn btn-primary btn-large">Prueba Nimbus gratis</a>
         </div>
       </section>
 
-      <!-- Sección 2: Trusted By (Empresas) -->
-      <section id="trusted" class="trusted-section bg-secondary text-center">
+      <!-- Sección 2: Trusted By (Social Proof) -->
+      <section id="trusted" class="bg-secondary text-center" style="padding: 4rem 0;">
         <div class="container">
             <p class="uppercase-tracking text-muted trusted-label">Confían en nosotros equipos de</p>
-            <!-- Logos irán aquí -->
+            <div class="trusted-grid">
+              <span class="brand-logo">VELOCITY</span>
+              <span class="brand-logo">NEXUS</span>
+              <span class="brand-logo">ACME CORP</span>
+              <span class="brand-logo">GLOBEX</span>
+              <span class="brand-logo">CYBERDYNE</span>
+            </div>
         </div>
       </section>
 
@@ -71,11 +75,10 @@
       <section id="demo">
         <div class="container text-center">
           <h2 class="section-title">Mira a Nimbus en acción.</h2>
-          <!-- El video de YouTube se agregará aquí -->
         </div>
       </section>
 
-      <!-- Sección 6: FAQ (Preguntas Frecuentes) -->
+      <!-- Sección 6: FAQ -->
       <section id="faq">
         <div class="container">
           <h2 class="section-title">Preguntas frecuentes.</h2>
@@ -97,22 +100,11 @@
           <span class="material-symbols-outlined">cloud</span>
           nimbus
         </a>
-        
         <div class="social-links">
-          <a href="#" class="social-icon">
-            <span class="material-symbols-outlined">terminal</span>
-            GitHub
-          </a>
-          <a href="#" class="social-icon">
-            <span class="material-symbols-outlined">share</span>
-            Twitter
-          </a>
-          <a href="#" class="social-icon">
-            <span class="material-symbols-outlined">group</span>
-            LinkedIn
-          </a>
+          <a href="#" class="social-icon"><span class="material-symbols-outlined">terminal</span> GitHub</a>
+          <a href="#" class="social-icon"><span class="material-symbols-outlined">share</span> Twitter</a>
+          <a href="#" class="social-icon"><span class="material-symbols-outlined">group</span> LinkedIn</a>
         </div>
-
         <p class="footer-copy">
           &copy; 2026 Nimbus Labs. Todos los derechos reservados.
         </p>
