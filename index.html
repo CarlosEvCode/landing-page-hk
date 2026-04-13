@@ -122,13 +122,11 @@
         </div>
       </section>
 
-      <!-- FAQ (Acordeón con Alpine.js) -->
+      <!-- FAQ -->
       <section id="faq">
         <div class="container">
           <h2 class="section-title">Preguntas frecuentes.</h2>
           <div class="faq-list" x-data="{ active: null }">
-            
-            <!-- Pregunta 1 -->
             <div class="faq-item">
               <button class="faq-button" @click="active !== 1 ? active = 1 : active = null">
                 ¿Es Nimbus gratuito para equipos pequeños?
@@ -138,19 +136,15 @@
                 Sí, Nimbus ofrece un plan gratuito para equipos de hasta 5 personas con todas las funcionalidades básicas de gestión de tareas.
               </div>
             </div>
-
-            <!-- Pregunta 2 -->
             <div class="faq-item">
               <button class="faq-button" @click="active !== 2 ? active = 2 : active = null">
                 ¿Qué tan segura es mi información?
                 <span class="material-symbols-outlined faq-icon" :class="active === 2 ? 'rotate' : ''">expand_more</span>
               </button>
               <div class="faq-answer" x-show="active === 2" x-transition.opacity.duration.300ms>
-                Utilizamos cifrado AES-256 de extremo a extremo. Además, realizamos copias de seguridad automáticas en servidores redundantes cada hora.
+                Utilizamos cifrado AES-256 de extremo a extremo. Además, realizamos copias de seguridad automáticas cada hora.
               </div>
             </div>
-
-            <!-- Pregunta 3 -->
             <div class="faq-item">
               <button class="faq-button" @click="active !== 3 ? active = 3 : active = null">
                 ¿Puedo importar datos de otras herramientas?
@@ -160,15 +154,58 @@
                 ¡Por supuesto! Nimbus tiene integraciones directas con Notion, Trello, Asana y Jira para que el cambio sea instantáneo.
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      <!-- Contacto -->
-      <section id="contact">
-        <div class="container">
+      <!-- Sección 7: Contacto con Validación Alpine.js -->
+      <section id="contact" class="bg-secondary">
+        <div class="container text-center">
           <h2 class="section-title">¿Listo para mejorar?</h2>
+          <div class="contact-form" x-data="{ 
+              name: '', 
+              email: '', 
+              message: '', 
+              submitted: false, 
+              loading: false,
+              validate() {
+                if(this.name && this.email && this.message) {
+                  this.loading = true;
+                  setTimeout(() => {
+                    this.loading = false;
+                    this.submitted = true;
+                    this.name = ''; this.email = ''; this.message = '';
+                  }, 1500);
+                } else {
+                  alert('Por favor, rellena todos los campos.');
+                }
+              }
+            }">
+            
+            <form @submit.prevent="validate()" x-show="!submitted" x-transition>
+              <div class="form-group">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" x-model="name" class="form-input" placeholder="Tu nombre">
+              </div>
+              <div class="form-group">
+                <label for="email">Email corporativo</label>
+                <input type="email" id="email" x-model="email" class="form-input" placeholder="nombre@empresa.com">
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" x-model="message" class="form-input form-textarea" placeholder="¿En qué podemos ayudarte?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" :disabled="loading">
+                <span x-show="!loading">Enviar mensaje</span>
+                <span x-show="loading">Enviando...</span>
+              </button>
+            </form>
+
+            <div class="success-msg" x-show="submitted" x-transition>
+              <span class="material-symbols-outlined">check_circle</span>
+              ¡Gracias! Tu mensaje ha sido enviado correctamente.
+            </div>
+          </div>
         </div>
       </section>
     </main>
