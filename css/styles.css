@@ -145,16 +145,24 @@ header {
   display: block;
 }
 
-.step {
-  text-align: center;
-}
-.step-num {
-  font-size: 3rem;
+.step { text-align: center; padding: 1rem; }
+.step-num { 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 102, 255, 0.1); /* Fondo azul muy suave */
+  color: var(--primary); /* Azul original de la página */
+  border-radius: 12px;
   font-weight: 800;
-  color: var(--primary);
-  opacity: 0.15;
-  display: block;
-  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text);
 }
 
 /* Video */
