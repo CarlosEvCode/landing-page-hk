@@ -2,7 +2,7 @@
   --bg: #0a0e14;
   --text: #e0e0e0;
   --muted: #8a9499;
-  --primary: #00d1ff;
+  --primary: #e0e0e0;
   --bg-alt: #0d121a;
   --border: #1e262f;
   --font: "Inter", system-ui, sans-serif;
@@ -98,7 +98,7 @@ header {
 }
 .nav-link:hover {
   color: var(--primary);
-  text-shadow: 0 0 15px rgba(0, 209, 255, 0.6);
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0);
 }
 
 /* Hero */
@@ -185,7 +185,7 @@ header {
 .card:hover {
   border-color: var(--primary);
   transform: translateY(-10px);
-  box-shadow: 0 0 30px rgba(0, 209, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .icon-img {
@@ -310,7 +310,7 @@ summary::-webkit-details-marker {
 }
 .btn-primary:hover {
   background: var(--primary);
-  box-shadow: 0 0 30px rgba(0, 209, 255, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);
 }
 
