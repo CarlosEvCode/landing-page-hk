@@ -2,7 +2,7 @@
   --bg: #fff;
   --text: #111827;
   --muted: #6b7280;
-  --primary: #0066ff;
+  --primary: #030b17;
   --bg-alt: #f9fafb;
   --border: #e5e7eb;
   --font: "Inter", system-ui, sans-serif;
@@ -29,6 +29,16 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+.container-image {
+  background-image: url('https://preview.redd.it/hollow-knight-wallpaper-edit-v0-s06xgdhtk8ig1.jpeg?width=640&crop=smart&auto=webp&s=d37c59d204a4585562c830e135c12ca03f7ed211');
+  background-size: cover;
+  background-position: center;
+
+}
+.container-image .hero-title{
+  padding: 0;
+  color: #fff;
 }
 .text-center {
   text-align: center;
